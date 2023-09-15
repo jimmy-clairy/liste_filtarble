@@ -63,9 +63,11 @@ body {
 }
 .input-control {
 	display: flex;
+	max-width: 450px;
 	align-items: center;
 	background: #f4f4f4;
 	border-radius: 10px;
+	overflow: hidden;
 }
 .input-control:focus-within {
 	outline: 1px solid #333;
@@ -78,9 +80,11 @@ body {
 	cursor: pointer;
 }
 .input-control input {
+	width: 100%;
 	font-size: 18px;
 	padding: 15px;
 	border: 0;
+	outline: 0;
 	color: #000;
 	background-color: #f4f4f4;
 	font-family: Lato, sans-serif;
@@ -121,7 +125,7 @@ body {
 	display: flex;
 	align-items: center;
 }
-.table-results {
+#table-results {
 	display: grid;
 	grid-gap: 15px;
 	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -165,7 +169,7 @@ body {
 		display: flex;
 		margin-left: 20px;
 	}
-	.table-results {
+	#table-results {
 		display: flex;
 		flex-direction: column;
 		gap: 0;
